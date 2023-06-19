@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>19June2023 -- Javascript</title>
+    </head>
+    <body>
+        <h1>Javascript Object Data Type</h1>
+
+        <script>
+            //Let create Js Object
+            var student1 = {
+                //1. Property:Value
+                fname:'Sumit', //member
+                lname:"Rishi", //membfer
+                age:30, //member
+                salary:50000, //member
+                address:"Mathurapur", //member
+                qualification:'B.A', //member 
+                getMyName(){
+                    console.log('Hello'+" "+ this.fname+" "+this.lname+' '+this.age);
+                }
+            };
+
+
+            let student2 = {
+                fname:'Rishi',
+                lname:"Raj",
+                age:20,
+                salary:40000,
+                address:`Samastipur`,
+                getMyAddress(){
+                    return this.address
+                }
+            }
+
+            console.log(student1.lname);  //. Dot is a memeber selection operator 
+            console.log(student1.getMyName())
+            console.log(student2.age);
+            console.log(student2.getMyAddress())
+        </script>
+    </body>
+</html>
